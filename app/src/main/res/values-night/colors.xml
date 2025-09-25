@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    
+    <!-- Ana Renkler - Gece modunda da aynı -->
+    <color name="primary_blue">#4A90E2</color>
+    <color name="primary_green">#7ED321</color>
+    <color name="primary_orange">#F5A623</color>
+    <color name="primary_pink">#FF6B9D</color>
+    <color name="primary_purple">#9013FE</color>
+    
+    <!-- Arka Plan Renkleri - Gece modunda da aynı -->
+    <color name="background_light">#F8F9FA</color>
+    <color name="background_gradient_start">#E3F2FD</color>
+    <color name="background_gradient_end">#F3E5F5</color>
+    
+    <!-- Buton Renkleri - Gece modunda da aynı -->
+    <color name="button_parent">#FF6B9D</color>
+    <color name="button_teacher">#4A90E2</color>
+    <color name="button_admin">#9013FE</color>
+    
+    <!-- Text Renkleri - Gece modunda da aynı -->
+    <color name="text_primary">#2C3E50</color>
+    <color name="text_secondary">#7F8C8D</color>
+    <color name="text_white">#FFFFFF</color>
+    
+    <!-- Shadow ve Border - Gece modunda da aynı -->
+    <color name="shadow_light">#1A000000</color>
+    <color name="border_light">#E0E0E0</color>
+</resources>

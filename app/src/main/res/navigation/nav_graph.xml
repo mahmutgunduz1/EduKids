@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/loginFragment">
+
+    <fragment
+        android:id="@+id/loginFragment"
+        android:name="com.mahmutgunduz.edukids.ui.fragment.LoginFragment"
+        android:label="fragment_login"
+        tools:layout="@layout/fragment_login">
+        
+        <action
+            android:id="@+id/action_loginFragment_to_adminFragment"
+            app:destination="@id/adminFragment"
+            app:popUpTo="@id/loginFragment"
+            app:popUpToInclusive="true" />
+            
+        <action
+            android:id="@+id/action_loginFragment_to_teacherFragment"
+            app:destination="@id/teacherFragment"
+            app:popUpTo="@id/loginFragment"
+            app:popUpToInclusive="true" />
+            
+        <action
+            android:id="@+id/action_loginFragment_to_parentFragment"
+            app:destination="@id/parentFragment"
+            app:popUpTo="@id/loginFragment"
+            app:popUpToInclusive="true" />
+            
+    </fragment>
+
+    <fragment
+        android:id="@+id/adminFragment"
+        android:name="com.mahmutgunduz.edukids.ui.fragment.AdminFragment"
+        android:label="fragment_admin"
+        tools:layout="@layout/fragment_admin">
+        
+        <action
+            android:id="@+id/action_adminFragment_to_loginFragment"
+            app:destination="@id/loginFragment"
+            app:popUpTo="@id/nav_graph"
+            app:popUpToInclusive="true" />
+        <action
+            android:id="@+id/action_adminFragment_to_recordManagmentFragment"
+            app:destination="@id/recordManagmentFragment" />
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/teacherFragment"
+        android:name="com.mahmutgunduz.edukids.ui.fragment.TeacherFragment"
+        android:label="fragment_teacher"
+        tools:layout="@layout/fragment_teacher">
+        
+        <action
+            android:id="@+id/action_teacherFragment_to_loginFragment"
+            app:destination="@id/loginFragment"
+            app:popUpTo="@id/nav_graph"
+            app:popUpToInclusive="true" />
+            
+    </fragment>
+
+    <fragment
+        android:id="@+id/parentFragment"
+        android:name="com.mahmutgunduz.edukids.ui.fragment.ParentFragment"
+        android:label="fragment_parent"
+        tools:layout="@layout/fragment_parent">
+        
+        <action
+            android:id="@+id/action_parentFragment_to_loginFragment"
+            app:destination="@id/loginFragment"
+            app:popUpTo="@id/nav_graph"
+            app:popUpToInclusive="true" />
+            
+        <action
+            android:id="@+id/action_parentFragment_to_dailyReportFragment"
+            app:destination="@id/dailyReportFragment" />
+            
+    </fragment>
+
+    <fragment
+        android:id="@+id/dailyReportFragment"
+        android:name="com.mahmutgunduz.edukids.ui.fragment.DailyReportFragment"
+        android:label="fragment_daily_report"
+        tools:layout="@layout/fragment_daily_report" />
+    <fragment
+        android:id="@+id/recordManagmentFragment"
+        android:name="com.mahmutgunduz.edukids.ui.fragment.admin.RecordManagmentFragment"
+        android:label="fragment_record_managment"
+        tools:layout="@layout/fragment_record_managment">
+        
+        <action
+            android:id="@+id/action_recordManagment_to_addStudent"
+            app:destination="@id/addStudentFragment" />
+            
+        <action
+            android:id="@+id/action_recordManagment_to_addStaff"
+            app:destination="@id/addStaffFragment" />
+            
+        <action
+            android:id="@+id/action_recordManagment_to_addClass"
+            app:destination="@id/addClassFragment" />
+            
+    </fragment>
+
+    <fragment
+        android:id="@+id/addStudentFragment"
+        android:name="com.mahmutgunduz.edukids.ui.fragment.admin.AddStudentFragment"
+        android:label="fragment_add_student"
+        tools:layout="@layout/fragment_add_student">
+        
+        <action
+            android:id="@+id/action_addStudentFragment_to_addClassFragment"
+            app:destination="@id/addClassFragment" />
+            
+    </fragment>
+
+    <fragment
+        android:id="@+id/addStaffFragment"
+        android:name="com.mahmutgunduz.edukids.ui.fragment.admin.AddStaffFragment"
+        android:label="fragment_add_staff"
+        tools:layout="@layout/fragment_add_staff" />
+
+    <fragment
+        android:id="@+id/addClassFragment"
+        android:name="com.mahmutgunduz.edukids.ui.fragment.admin.AddClassFragment"
+        android:label="fragment_add_class"
+        tools:layout="@layout/fragment_add_class">
+        
+        <action
+            android:id="@+id/action_addClassFragment_to_addStaffFragment"
+            app:destination="@id/addStaffFragment" />
+            
+        <action
+            android:id="@+id/action_addClassFragment_to_addStudentFragment"
+            app:destination="@id/addStudentFragment" />
+            
+    </fragment>
+
+</navigation>

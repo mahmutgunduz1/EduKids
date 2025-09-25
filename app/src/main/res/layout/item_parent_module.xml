@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="8dp"
+    android:background="@drawable/card_background"
+    android:clickable="true"
+    android:focusable="true"
+    android:foreground="?android:attr/selectableItemBackground"
+    app:cardCornerRadius="20dp"
+    app:cardElevation="8dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="24dp">
+
+        <!-- Üst Kısım - İkon ve Badge -->
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp">
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cvIconBackground"
+                android:layout_width="72dp"
+                android:layout_height="72dp"
+                app:cardCornerRadius="36dp"
+                app:cardElevation="6dp">
+
+                <TextView
+                    android:id="@+id/tvModuleIcon"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:text="💖"
+                    android:textSize="36sp" />
+
+            </androidx.cardview.widget.CardView>
+
+            <!-- Bildirim Badge -->
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cvNotificationBadge"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_alignEnd="@id/cvIconBackground"
+                android:layout_alignTop="@id/cvIconBackground"
+                android:layout_marginTop="-4dp"
+                android:layout_marginEnd="-4dp"
+                android:visibility="gone"
+                app:cardBackgroundColor="@color/admin_red"
+                app:cardCornerRadius="12dp"
+                app:cardElevation="4dp">
+
+                <TextView
+                    android:id="@+id/tvNotificationCount"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:text="3"
+                    android:textColor="@color/white"
+                    android:textSize="10sp"
+                    android:textStyle="bold" />
+
+            </androidx.cardview.widget.CardView>
+
+        </RelativeLayout>
+
+        <!-- Başlık -->
+        <TextView
+            android:id="@+id/tvModuleTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:fontFamily="sans-serif-medium"
+            android:gravity="center"
+            android:text="Çocuğumun Günü"
+            android:textColor="@color/text_primary"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+
+        <!-- Alt Başlık -->
+        <TextView
+            android:id="@+id/tvModuleSubtitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="12dp"
+            android:fontFamily="sans-serif"
+            android:gravity="center"
+            android:text="Bugünkü etkinlikler"
+            android:textColor="@color/text_secondary"
+            android:textSize="12sp" />
+
+        <!-- Son Güncelleme -->
+        <TextView
+            android:id="@+id/tvLastUpdate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/card_background"
+            android:fontFamily="sans-serif"
+            android:paddingHorizontal="12dp"
+            android:paddingVertical="4dp"
+            android:text="2 dk önce"
+            android:textColor="@color/parent_primary"
+            android:textSize="10sp"
+            android:textStyle="italic"
+            android:visibility="gone" />
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

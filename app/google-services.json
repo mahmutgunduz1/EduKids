@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "381027784995",
+    "project_id": "edukids-329e0",
+    "storage_bucket": "edukids-329e0.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:381027784995:android:55070016dcfc2a8bcf5496",
+        "android_client_info": {
+          "package_name": "com.mahmutgunduz.edukids"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD0COCp72wXUF4DgDQ5zPebE6CgS858TM8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

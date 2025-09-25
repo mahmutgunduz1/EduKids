@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginHorizontal="4dp"
+    android:layout_marginVertical="6dp"
+    android:clickable="true"
+    android:focusable="true"
+    app:cardCornerRadius="16dp"
+    app:cardElevation="2dp"
+    app:rippleColor="@color/button_admin"
+    app:strokeWidth="0dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="16dp">
+
+        <!-- Student Avatar -->
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="56dp"
+            android:layout_height="56dp"
+            android:layout_marginEnd="16dp"
+            app:cardCornerRadius="28dp"
+            app:cardElevation="0dp"
+            app:strokeColor="@color/button_admin"
+            app:strokeWidth="2dp">
+
+            <TextView
+                android:id="@+id/tvStudentAvatar"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/button_admin"
+                android:gravity="center"
+                android:text="👨‍🎓"
+                android:textColor="@color/white"
+                android:textSize="24sp"
+                tools:text="AK" />
+
+        </com.google.android.material.card.MaterialCardView>
+
+        <!-- Student Info -->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <!-- Name and Status Row -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tvStudentName"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:fontFamily="sans-serif-medium"
+                    android:textColor="@color/text_primary"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    tools:text="Ahmet Kaya" />
+
+                <TextView
+                    android:id="@+id/tvStudentStatus"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/status_background"
+                    android:paddingHorizontal="8dp"
+                    android:paddingVertical="4dp"
+                    android:text="Aktif"
+                    android:textColor="@color/success_color"
+                    android:textSize="10sp"
+                    android:textStyle="bold"
+                    tools:text="Aktif" />
+
+            </LinearLayout>
+
+            <!-- Email -->
+            <TextView
+                android:id="@+id/tvStudentEmail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:textColor="@color/text_secondary"
+                android:textSize="12sp"
+                tools:text="student@test.com" />
+
+            <!-- Registration Date -->
+            <TextView
+                android:id="@+id/tvStudentDate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:textColor="@color/text_secondary"
+                android:textSize="11sp"
+                tools:text="Kayıt: 15.09.2024" />
+
+        </LinearLayout>
+
+        <!-- Action Menu -->
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnStudentMenu"
+            style="@style/Widget.Material3.Button.IconButton"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center_vertical"
+            app:icon="@drawable/ic_child"
+            app:iconSize="20dp"
+            app:iconTint="@color/text_secondary" />
+
+    </LinearLayout>
+
+</com.google.android.material.card.MaterialCardView>

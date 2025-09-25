@@ -1,0 +1,11 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.EduKids" parent="Theme.Material3.Light.NoActionBar">
+        <!-- Gece modunda da light tema kullan -->
+        <item name="android:windowBackground">@drawable/gradient_background</item>
+        <item name="colorPrimary">@color/primary_blue</item>
+        <item name="colorOnPrimary">@color/white</item>
+        <item name="android:statusBarColor">@color/background_gradient_start</item>
+        <item name="android:windowLightStatusBar">true</item>
+    </style>
+</resources>
